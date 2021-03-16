@@ -57,3 +57,91 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+.flower {
+  position: relative;
+  width: 3%;
+  animation-name: otocka;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes otocka {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.flower:nth-child(1) {
+  top: 40px;
+  left: 515px;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+}
+.flower:nth-child(2) {
+  top: 45px;
+  left: 46px;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+}
+.flower:nth-child(3) {
+  top: 64px;
+  left: 888px;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+.flower:nth-child(4) {
+  top: 67px;
+  left: 903px;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+.flower:nth-child(5) {
+  top: 50px;
+  left: 657px;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+.flower:nth-child(6) {
+  top: 80px;
+  left: 1150px;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+}
+.flower:nth-child(7) {
+  top: 137px;
+  left: 0px;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+}
+.flower:nth-child(8) {
+  top: 96px;
+  left: 460px;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+.flower:nth-child(9) {
+  top: 60px;
+  left: 200px;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.flower:nth-child(10) {
+  top: 130px;
+  left: 800px;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
