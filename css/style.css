@@ -145,3 +145,154 @@ body {
   animation-timing-function: ease;
   animation-direction: alternate;
 }
+
+#sun {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  animation-name: shine;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ray {
+  width: 5px;
+  height: 50px;
+  background-color: yellow;
+  position: relative;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ray:nth-child(2) {
+  top: -70px;
+  left: 248px;
+  animation-name: shineRayOne;
+  animation-delay: 0.2s;
+}
+
+.ray:nth-child(3) {
+  top: 70px;
+  left: 248px;
+  animation-name: shineRayOne;
+  animation-delay: 0.4s;
+}
+
+.ray:nth-child(4) {
+  top: -70px;
+  left: 340px;
+  transform: rotate(90deg);
+  animation-name: shineRayTwo;
+  animation-delay: 0.6s;
+}
+
+.ray:nth-child(5) {
+  top: -120px;
+  left: 150px;
+  animation-name: shineRayTwo;
+  transform: rotate(90deg);
+  animation-delay: 0.8s;
+}
+
+.ray:nth-child(6) {
+  top: -100px;
+  left: 170px;
+  animation-name: shineRayThree;
+  transform: rotate(45deg);
+  animation-delay: 0.7s;
+}
+
+.ray:nth-child(7) {
+  top: -300px;
+  left: 330px;
+  animation-name: shineRayThree;
+  transform: rotate(45deg);
+  animation-delay: 0.6s;
+}
+
+.ray:nth-child(8) {
+  top: -200px;
+  left: 330px;
+  animation-name: shineRayFour;
+  transform: rotate(135deg);
+  animation-delay: 0.2s;
+}
+
+.ray:nth-child(9) {
+  top: -400px;
+  left: 170px;
+  animation-name: shineRayFour;
+  transform: rotate(135deg);
+  animation-delay: 0.4s;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.02, 1.02);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shineRayOne {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1, 1.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shineRayTwo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5, 1) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shineRayThree {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5, 1) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shineRayFour {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5, 1) rotate(135deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
